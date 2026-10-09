@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	padding-top: 60px;
+}
+
+#navbar {
+	display: flex;
+	position: fixed;
+	top: 0; 
+	height: 60px;
+	width: 100%;
+	background-color: #F4FF8F;
+	z-index: 2;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+#navbar img {
+	margin: 3px 3px 3px 10px;
+	max-height: 50px;
+}
+
+#navbar a {
+	text-decoration: none;
+	color: black;
+}
+
+#navbar p {
+	font-family: Lobster, sans-serif;
+	font-size: 40px;
+	color: #331807;
+	margin-left: 120px;
+}
+
+#navbar a {
+	color: #331807;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	font-family: Lora, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	gap: clamp(0.5rem, 2vw, 2rem);
+}
+
+nav a {
+	margin-right: 30px;
+}
+
+#hero {
+	--hero-height: clamp(300px, 40vh, 500px);
+	width: 100%;
+	height: var(--hero-height);
+	scroll-margin-top: 60px;
+}
+
+#hero-bg img {
+	width: 100%;
+	height: var(--hero-height);
+	object-fit: cover;
+}
+
+#hero-bg .filter {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 60px;
+	left: 0;
+	width: 100%;
+	height: var(--hero-height);
+	z-index: 1;
+	display: flex;
+}
+
+main {
+	margin: 3rem;
+}
+
+main h1, main h2 {
+	font-family: Lobster, sans-serif;
+	color: #331807;
+}
+
+main li {
+	font-family: Lora, sans-serif;
+	line-height: 1.8;
+	font-size: 20px;
+	margin-left: 30px;
+}
+
+h1 {
+	margin-bottom: 30px;
+	margin-left: 30px;
+	font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+h2 {
+	font-size: clamp(1.4rem, 3vw, 2rem);
+	margin-bottom: 30px;
+}
+
+main p {
+	font-family: Lora, sans-serif;
+	color: black;
+	font-size: clamp(1rem, 1.5vw, 1.125rem);
+	line-height: 1.8;
+	margin: 1rem auto;
+}
+
+.intro {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.intro-container {
+	flex: 1 1 300px;
+}
+
+.intro-p {
+	text-indent: 7em;
+}
+
+.intro .pancake-img {
+	max-width: 30%;
+}
+
+.pancake-img {
+	flex: 1 1 200px;
+}
+
+.intro .pancake-img img {
+	width: 80%;
+	height: auto;
+	margin-left: 1.5rem;
+}
+
+#ingredients, #instructions {
+	margin: 2rem;
+}
+
+#instructions li {
+	margin: 20px 0;
+}
+
+.jump-to-menu a {
+	text-decoration: none;
+	color: black;
+	font-style: italic;
+	margin-left: 30px;
+	font-size: 20px;
+}
+
+.jump-to-menu a::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("images/arrow-right.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.back-to-top {
+  position: fixed;
+  z-index: 2;
+  right: 50px;
+  bottom: 20px;
+}
+
+.back-to-top .arrow-btn {
+  border: 5px solid #331807;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top img {
+  height: 40px;
+  width: 40px;
+  margin-right: 2px;
+}
+
+.original-recipe {
+	font-size: 15px;
+	justify-self: center;
+	margin-top: 3rem;
+	z-index: 1;
+	font-style: italic;
+}
+
+.original-recipe a {
+	text-decoration: none;
+	color: black;
+}
+
+.original-recipe:hover {
+	text-decoration: underline;
+}
+
+footer {
+	height: 60px;
+	width: 100%;
+	background-color: #F4FF8F;
+}
+
+footer p {
+	justify-self: center;
+	font-family: Lora, sans-serif;
+	color: black;
+	font-style: italic;
+	padding-top: 1rem;
+}
